@@ -12,3 +12,4 @@
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
+  puts "#{person}: #{data}"
