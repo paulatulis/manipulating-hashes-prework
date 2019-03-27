@@ -12,4 +12,14 @@
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
-  puts "#{person}: #{data}"
+contacts.each do |person, data|
+if person == "Freddy Mercury"
+data.each do |info, value|
+if info == :favorite_icecream_flavors
+value.delete_if {|x| x == "strawberry"}
+end
+end
+end
+end
+return contacts
+end
